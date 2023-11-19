@@ -49,7 +49,6 @@ function close(){
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    
     const submitBtn = document.getElementById("submitBtn");
     const checkRes = document.getElementById("checkRes");
     const closeBtn = document.getElementById("closeBtn");
