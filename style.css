@@ -56,3 +56,66 @@ nav{
     height: 70px;
     margin: 5px 20px ;
 }
+
+/* for style.css*/
+.footer{
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1c1c1c;
+    color: white;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.column{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.footer h5{
+    font-size: 20px;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+#links a, #address a{
+    text-decoration: none;
+    color: #b6b6b6;
+}
+
+#links a:hover, #address a:hover{
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-linkedin{
+    margin: 6px;
+}
+
+#socials a{
+    color: white;
+}
+
+#socials a:hover{
+    color: #5e5e5e;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+    width: 90%;
+}
+
+.google-map iframe {
+    height: 95%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
