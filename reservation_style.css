@@ -1,0 +1,115 @@
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image: url(IMg/Oborri-12_1.jpg);
+    background-size: cover;
+}
+
+.form-container{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-self: right;
+    height: 60%;
+    width: 45%;
+    margin-right: 50px;
+    background: rgba(255, 255, 255, .75);
+    
+}
+
+.form-info{
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-text{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.form-text h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form-text p{
+    font-size: 18px;
+}
+
+#fullName, #email{
+    padding: 7px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 3px solid #534b4b;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+#guests, #date, #time{
+    padding: 7px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 3px solid #534b4b;
+    border-radius: 4px;
+    width: 115px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+button{
+    background-color: #1c1c1c;
+    color: white;
+    padding: 14px 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+#resModal h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 40px;
+}
+
+#reservationTable{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#reservationTable th, #reservationTable td{
+    text-align: center;
+    padding: 8px;
+}
+
+#reservationTable th{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+#reservationTable td{
+    border-bottom: 2px solid #534b4b;
+}
+
+.closeBtn{
+    display: flex;
+    justify-content: center;
+}
