@@ -1,0 +1,135 @@
+.body{
+    background-image: url(IMg/Oborri-8_1-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.img_main{
+    height: 47%;
+    width: 33%;
+    margin-top: 20px;
+}
+
+.blue{
+    background-color: black;
+    margin-top: 40px;
+    opacity: 0.75;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+    background-color: rgba(255, 255, 255, 0.85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.red h1{
+    position: relative;
+    top: 20px;
+    margin: 35px;
+}
+
+.green{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-div{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+}
+
+.img-div{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+
+#IMG1{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.info-div{
+    background-color: #523f3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-div div{
+    text-align: center;
+    color: aliceblue;
+    font-size: 21px;
+    width: 85%;
+}
+
+.info-div h1{
+    font-size: 55px;
+}
+
+.info-div button{
+    background-color: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 9px 15px;
+}
+
+.info-div button:hover{
+    background-color: white;
+    color: #523f3f;
+}
+
+.blue p{
+    width: 60%;
+    margin: 60px;
+    text-align: justify;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 21px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+
+.gallery-item {
+    margin: 0px;
+    float: left;
+    width: 90%;
+    height: 85%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+}

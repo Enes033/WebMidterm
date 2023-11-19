@@ -4,26 +4,11 @@ body{
    flex-direction: column;
 }
 
+
+
 div{
     margin: 0px;
     padding: 0px;;
-}
-
-.container{
-    width: 100vw;
-    height: 100vh;
-}
-
-.blue{
-    background-color: blue;
-}
-
-.red{
-    background-color: red;
-}
-
-.green{
-    background-color: green;
 }
 
 nav{
@@ -31,6 +16,9 @@ nav{
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .link-container{
