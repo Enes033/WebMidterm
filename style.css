@@ -9,11 +9,6 @@ div{
     padding: 0px;;
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
-}
-
 .blue{
     background-color: blue;
 }
@@ -31,6 +26,8 @@ nav{
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
 }
 
 .link-container{

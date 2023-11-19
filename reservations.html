@@ -6,6 +6,8 @@
     <title>New title</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation_style.css">
+    <link rel="stylesheet" href="modals.css">
 
 </head>
 <body>
@@ -21,8 +23,62 @@
             <a href="contacts.html">Contact us</a>
         </div>
     </nav>
-    <div class="blue container"><h1>Header 1</h1></div>
-    <div class="red container"><h1>Header 2</h1></div>
-    <div class="green container"><h1>Header 3</h1></div>
+    <div class="main-container">
+        <div class="form-container">
+            <div class="form-text">
+                <h1>Make a reservation</h1>
+                <p>To help us find the best table for you, select the preferred party size, date, and time of your reservation.</p>
+            </div>
+            <div class="form-info">
+                <form>
+                    <div>
+                        <input type="text" id="fullName" placeholder="Full Name">
+                        <input type="email" id="email" placeholder="Email"> 
+                    </div>
+                    <div>
+                        <select name="guests" id="guests">
+                            <option value="2 guests">2 guests</option>
+                            <option value="3 guests">3 guests</option>
+                            <option value="4 guests">4 guests</option>
+                            <option value="5 guests">5 guests</option>
+                            <option value="6 guests">6 guests</option>
+                        </select>
+                        <input type="date" id="date">
+                        <input type="time" id="time">
+                    </div>
+                    <div>
+                        <button id="submitBtn">Reserve Your Table</button>
+                    </div>
+                </form>
+            </div>        
+        </div>
+        <div>
+            <button id="checkRes" class="checkRes">Check Reservations</button>
+        </div>
+    </div>
+
+    <div id="resModal" class="modal">
+        <div class="modal-content">
+                <h2>Your Reservations</h2>
+            <table id="reservationTable">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Guest No.</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="closeBtn">
+                <button type="button" id="closeBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="reservations.js"></script>
 </body>
 </html>
