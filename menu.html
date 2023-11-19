@@ -5,26 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New title</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <nav>
         <div>
-            <a href="main.html">  <img class="Logo" src="/IMg/Logo-Zi-Atelier-Transparente-2.png"></img></a>
+            <a href="main.html">  <img class="Logo" src="assets/IMg/Logo-Zi-Atelier-Transparente-2.png"></img></a>
         </div>
         <div class="link-container">
             <a href="main.html">Home</a>
             <a href="#">Menu</a>
             <a href="reservations.html">Reservations</a>
-            <a href="career.html">Career</a>
             <a href="contacts.html">Contact us</a>
         </div>
     </nav>
-    <div class="blue container"><h1>Header 1</h1></div>
-    <div class="red container"><h1>Header 2</h1></div>
-    <div class="green container"><h1>Header 3</h1></div>
+    <div class="container">
+            <h1>Menu</h1>
+            <ul id="imageList">
+                <li onclick="changeImage('assets/IMg/menu-atelier_002.png')" class="active">
+                    Starters
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_007.png')">
+                    Salads
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_004.png')">
+                    Side Dishes
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_010.png')">
+                    Soup
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_008.png')">
+                    Meat
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_009.png')">
+                    Fish
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_011.png')">
+                    Pasta
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_006.png')">
+                    Risotto
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_003.png')">
+                    Desserts
+                </li>
+                <li onclick="changeImage('assets/IMg/menu-atelier_001.png')">
+                    Beverages
+                </li>
+            </ul>
+            <img id="mainImage" src="assets/IMg/menu-atelier_002.png" alt="Main Image">
+    </div>
 
     <footer class="footer">
         <div id="links" class="column">
@@ -33,7 +66,6 @@
                 <li><a href="main.html">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="career.html">Career</a></li>
                 <li><a href="contacts.html">Contact us</a></li>
             </ul>
         </div>
@@ -63,5 +95,30 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function changeImage(newImage) {
+            var listItems = document.querySelectorAll('#imageList li');
+
+        listItems.forEach(function(item) {
+            item.classList.remove('active');
+        });
+
+        var clickedItem = event.target.closest('li');
+
+        clickedItem.classList.add('active');
+
+        var imageElement = document.getElementById('mainImage');
+
+        imageElement.src = newImage;
+
+        if(newImage == 'assets/IMg/menu-atelier_002.png'){
+            imageElement.style.width = "50%";
+        }
+        else{
+            imageElement.style.width = "30%";
+        }
+    }
+    </script>
 </body>
 </html>
