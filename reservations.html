@@ -32,8 +32,8 @@
             <div class="form-info">
                 <form>
                     <div>
-                        <input type="text" id="fullName" placeholder="Full Name">
-                        <input type="email" id="email" placeholder="Email"> 
+                        <input type="text" id="fullName" placeholder="Full Name" name="fullName" required>
+                        <input type="email" id="email" placeholder="Email" name="email" required> 
                     </div>
                     <div>
                         <select name="guests" id="guests">
@@ -43,8 +43,8 @@
                             <option value="5 guests">5 guests</option>
                             <option value="6 guests">6 guests</option>
                         </select>
-                        <input type="date" id="date">
-                        <input type="time" id="time">
+                        <input type="date" id="date" name="date" required>
+                        <input type="time" id="time" name="time" required>
                     </div>
                     <div>
                         <button id="submitBtn">Reserve Your Table</button>
@@ -63,11 +63,14 @@
             <table id="reservationTable">
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Full Name</th>
                         <th>Email</th>
                         <th>Guest No.</th>
                         <th>Date</th>
                         <th>Time</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -75,6 +78,58 @@
             </table>
             <div class="closeBtn">
                 <button type="button" id="closeBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="edit-modal-content">
+            <h2>Edit Reservation</h2>
+            <div class="edit-form">
+                <form>
+                    <div>
+                        <input type="text" id="fullName" placeholder="Full Name" name="fullName" class="update-input">
+                        <input type="email" id="email" placeholder="Email" name="email" class="update-input"> 
+                    </div>
+                    <div>
+                        <select name="guests" id="guests" class="update-input">
+                            <option value="2 guests">2 guests</option>
+                            <option value="3 guests">3 guests</option>
+                            <option value="4 guests">4 guests</option>
+                            <option value="5 guests">5 guests</option>
+                            <option value="6 guests">6 guests</option>
+                        </select>
+                        <input type="date" id="date" name="date" class="update-input">
+                        <input type="time" id="time" name="time" class="update-input">
+                    </div>
+                </form>
+                <div>
+                    <button id="updateBtn">OK</button>
+                    <button id="cancelBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirm-modal" class="modal">
+        <div class="email-modal-content">
+            <h2>Please confirm your email</h2>
+            <div>
+                <input type="email" name="emailConfirm" id="emailConfirm" placeholder="Email">
+            </div>
+            <div>
+                <button id="confirmEmail">Confirm</button>
+                <button id="closeConfirm">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="delete-modal" class="modal">
+        <div class="email-modal-content">
+            <h2>Do you want to cancel your reservation?</h2>
+            <div>
+                <button id="confirmDelete">Confirm</button>
+                <button id="closeDelete">Close</button>
             </div>
         </div>
     </div>

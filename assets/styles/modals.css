@@ -20,7 +20,42 @@
     margin: 6% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 60%;
+    height: 80%;
+    overflow-y: scroll;
+  }
+
+  .edit-modal-content{
+    position: fixed;
+    background-color: #fefefe;
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    top: 25%;
+    left: 30%;
+    text-align: center;
+  }
+
+  .email-modal-content{
+    position: fixed;
+    background-color: #fefefe;
+    margin: 6% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    top: 25%;
+    left: 30%;
+    text-align: center;
+  }
+
+  .email-modal-content input{
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: 3px solid #534b4b;
+    border-radius: 4px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
   }
   
   .close {
